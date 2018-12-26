@@ -15,11 +15,8 @@ Work on Alpha 3 started rather broadly, addressing bug fixes and docs updates of
 The grid system was overhauled with three major pull requests—[#19099](https://github.com/twbs/bootstrap/pull/19099), [#20349](https://github.com/twbs/bootstrap/pull/20349), and [#20361](https://github.com/twbs/bootstrap/pull/20361). Those PRs largely focused on the following changes:
 
 - Our ready-made grid classes (containers and columns) are now behind a Sass variable, meaning **grid classes can easily be disabled via Sass variable**. Update the boolean `$enable-grid-classes` variable and recompile to remove them.
-
 - **Grid modifier classes are simpler** and no longer require the `col-` prefix. For example, instead of `.col-offset-*-*`, `.col-push-*-*`, and `.col-pull-*-*`, we now have `.offset-*-*`, `.push-*-*`, and `.pull-*-*`.
-
 - **Mixins have been changed**, and then changed again, to in an effort to keep generated classes simple and cooperative between standard and flexbox modes. Our two primary column mixins are now `make-col-ready`, which houses the `position`, `padding-*`s, and `min-height` (to prevent collapsing empty columns), and `make-col` for setting the `float` and `width`.
-
 - **Added a grid customization section to the docs** to explain how to change the number of columns, grid tier breakpoints, container widths, and more.
 
 These changes are available in our standard grid, as well as our flexbox grid. More on that below.
@@ -31,9 +28,7 @@ These changes are available in our standard grid, as well as our flexbox grid. M
 Flexbox mode has been updated across the board in Alpha 3, starting from the grid system (it uses the same variable and the updated Sass mixins) and moving through our utilities and components.
 
 - **New flexbox grid docs.** In addition to the standard grid docs, we now have a dedicated docs page for our flexbox grid as it behaves slightly differently than the standard grid. This new page includes details on how and why this grid works the way it does, as well as additional code examples.
-
 - **Automatic equal-width column sizing** with new `.col-{breakpoint}` classes. For example, for three equal-width columns at the `xs` breakpoint, you'd create three columns each with just `.col-xs`.
-
 - **New flexbox alignment utility classes** for vertically and horizontally distributing items. Works with our flexbox grid, as well as just about any other custom component.
 
 ## Forms
@@ -43,9 +38,7 @@ Flexbox mode has been updated across the board in Alpha 3, starting from the gri
 Forms saw a ton of activity early on in Alpha 3's development. Documentation, class names, layout options, and validation styles have all been drastically improved.
 
 - **New classes for checkboxes, radios, input sizing, and legends.** While not 100% final, all our form controls are named more clearly and consistently across our CSS.
-
 - **Replaced the base64 PNG background images [with inline SVGs](https://github.com/twbs/bootstrap/pull/17222)** for our custom form controls and validation states. Scale those form controls to your heart's content!
-
 - Speaking of validation states, we have **brand new form validation and help text options**. Validation states can now be applied on a per-input basis (with `.form-control-{state}`) and optional validation feedback can be shown with `.form-control-feedback`. Independent form help text can now be controlled with the new `.form-text` class.
 
 {% highlight html %}
@@ -64,7 +57,6 @@ Forms saw a ton of activity early on in Alpha 3's development. Documentation, cl
 {% endhighlight %}
 
 - Fixed a few form related bugs, like the horizontal label padding in [#17498](https://github.com/twbs/bootstrap/issues/17498), misuse of `<fieldset>`s for form groups, sizing classes not applying to `<select>`s, and more.
-
 - **Documentation for forms has been overhauled.** We have simpler examples of our available form controls, clearer guidance on validation states (and when to use each), and more.
 
 ## System fonts

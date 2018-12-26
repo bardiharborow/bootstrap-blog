@@ -16,12 +16,9 @@ As mentioned in [our Beta 2 release](/2017/10/19/bootstrap-4-beta-2/), we needed
 
 - **Rewrote native and custom check controls.** Both browser default and custom checkboxes and radios now have simpler markup after removing the `<input>` from the `<label>`. Now, all checkboxes and radios have a parent `<div>` and sibling `<input>` and `<label>` pair. This is essential for form validation and disabled inputs because we can use the input's state to style the label.
 
-    In addition, custom checkbox and radio elements no longer have a `.custom-control-indicator`. This is generated from the new `.custom-control-label`.
-
+  In addition, custom checkbox and radio elements no longer have a `.custom-control-indicator`. This is generated from the new `.custom-control-label`.
 - **Input groups were rewritten** with specific `.input-group-{prepend|append}` classes. The new approach allows us to support validation styles and messages within input groups, while also adding support for custom selects, custom file inputs, and multiple `.form-control`s.
-
 - **Responsive tables are once again parent classes** to avoid accessiblity issues with changing a `<table>`'s `display`.
-
 - **Deleted the `.col-form-legend` class**, consolidating it's styles into the `.col-form-label` class.
 
 Read the [Migration page]({{ site.main }}/docs/4.0/migration/#beta-3-changes) for further details.
@@ -31,13 +28,9 @@ Read the [Migration page]({{ site.main }}/docs/4.0/migration/#beta-3-changes) fo
 In addition to the breaking changes, we've addressed a few more general issues that may impact your project.
 
 - Restored `cursor: pointer` to non-disabled links, buttons, `.close`, navbar toggler, and pagination links.
-
 - Added a new vertically centered modal option with `.modal-dialog-centered`.
-
 - Added new dropleft and dropright variants for dropdowns in #23860.
-
 - Our npm package no longer includes any files other than our source and dist JavaScript and CSS files. If you previously relied on our running our scripts via the `node_modules` folder, you'll need to update your build tools.
-
 - Print styles have moved to bottom of the import stack to properly override styles.
 
 For more details on this release's changes, take a look at the [Beta 3 ship list issue](https://github.com/twbs/bootstrap/issues/24439), as well as the [Beta 3 project](https://github.com/twbs/bootstrap/projects/10). Be sure to [join our official Slack room!](https://bootstrap-slack.herokuapp.com) and dive into [our issue tracker](https://github.com/twbs/bootstrap/issues/) with bug reports, questions, and specific feedback whenever possible.

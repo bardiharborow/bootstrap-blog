@@ -23,15 +23,10 @@ Lastly, we've changed a few breakpoint and container dimensions. The `sm` tier's
 Utility classes got a ton of attention with Alpha 5 and will continue to in Alpha 6. Major changes in this release include:
 
 - Simpler `margin` and `padding` syntax (e.g., now `mx-auto` instead of `m-x-auto`).
-
 - Renamed `.pull-*-left` and `.pull-*-right` to their CSS properties (e.g., now `.float-*-left` and `.float-*-right`).
-
 - Separated `background` and `color` utilities for more explicit styling.
-
 - Renamed image utilities, moving from `.img-rounded` and `.img-circle` to `.rounded` and `.rounded-circle`, respectively.
-
 - Removed the `display: block;` from `.img-fluid` as it's unnecessary for creating responsive images (the `inline-block` default works great as-is).
-
 - Added new `vertical-align` utilities with `.align-top`, `.align-middle`, and more.
 
 Be sure to scope out the open issues in [the Alpha 6 milestone](https://github.com/twbs/bootstrap/milestone/39). There are more updates coming to utilities to add more responsive variations, more consistent naming, and more.
@@ -43,11 +38,8 @@ We've put a [ton of time into the navbar for Alpha 5](https://github.com/twbs/bo
 Here's a look at what's new, how it works, and what might change in our next release.
 
 - First up, the navbar has a **brand new toggler** that features a customizable SVG-based `background-image`. With the power of Sass variables, that allows us to easily change the color of those hamburger menu icons.
-
 - Second, the **default styles for the brand and navigation have largely been tweaked**. There's less custom styling overall and an emphasis on positioning and flexibility.
-
 - Building on that, we **overhauled the collapse plugin integration for responsive navbars**. With the help of some utility classes and collapse classes for each grid tier, you can easily pick the breakpoint for collapsing your navbar without having to recompile your Sass. Also included is the auto restyling of dropdown menus for mobile so they no longer hide other navbar content when toggled.
-
 - Lastly, we've **updated the styling and documentation for various navbar subcomponents**. There's more flexibility and examples of the `.navbar-brand`, better form control support, higher nav contrast, themed responsive toggles, and more.
 
 The navbar is a tricky one—there's so much functionality and styling that can go into them. We've [outlined the next major pieces for the navbar](https://github.com/twbs/bootstrap/issues/20937), but there's likely more we're missing. Be sure to give the updated component a whirl and report back with your feedback.

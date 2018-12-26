@@ -23,7 +23,6 @@ We have a brand [new Theming docs page]({{ site.main }}/docs/4.0/getting-started
 In addition to the documentation changes, we've made a few CSS changes to improve how folks interact with our theming options.
 
 - We've added new theme color variables in addition to the map. Now you can use `$primary` or `theme-color("primary")` as needed. The values in `$theme-colors` are also now mapped to these new variables instead of their direct color.
-
 - We've improved the ability to customize Sass maps. With Beta 1, we didn't have a setup in place to modify your `$theme-colors` map without replacing it wholesale. That's been fixed in Beta 2—override existing values and add more as needed. Our new Theming docs page will show you how it's done.
 
 Lastly, our `$enable-shadows` and `$enable-gradients` Sass variables have finally been updated and integrated into several of our components. Now, when you enable those variables (both are `false` by default) and recompile, you'll see subtle gradients and shadows across alerts, buttons, carousels, custom form controls, and dropdown items.
