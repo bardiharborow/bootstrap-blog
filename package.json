@@ -15,11 +15,14 @@
   "homepage": "https://blog.getbootstrap.com/",
   "scripts": {
     "markdownlint": "markdownlint _posts",
-    "test": "npm run markdownlint"
+    "stylelint": "stylelint _sass/",
+    "test": "npm run markdownlint && npm run stylelint"
   },
   "dependencies": {},
   "devDependencies": {
-    "markdownlint-cli": "^0.13.0"
+    "markdownlint-cli": "^0.13.0",
+    "stylelint": "^9.10.1",
+    "stylelint-config-twbs-bootstrap": "^0.3.0"
   },
   "engines": {
     "node": ">=6"
